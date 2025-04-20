@@ -3,15 +3,17 @@ import { Navbar, Container, Nav, Form, FormControl, InputGroup, Dropdown, Badge 
 import { FaUser, FaShoppingCart } from 'react-icons/fa';
 import "./header.css";
 import logo from "../../assets/images/main.png"
+import CategoryNavbar from './CategoryNavbar/CategoryNavbar';
 
 const Header = () => {
   return (
-    <div>
+    <div className=''>
     {/* COVID Notice */}
+    
     <div className="covid-banner">
       Due to the COVID 19 epidemic, orders may be processed with a slight delay
     </div>
-  
+  <div className='container bg-light'>
     <Navbar bg="light" expand="lg" className="py-3 shadow-sm">
       <Container fluid>
         {/* Logo */}
@@ -58,6 +60,8 @@ const Header = () => {
         </Nav>
       </Container>
     </Navbar>
+    <CategoryNavbar />
+    </div>
   </div>
   )
 }
