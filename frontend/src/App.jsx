@@ -1,10 +1,23 @@
-import { useState } from "react";
+
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import HomePage from "./pages/Home";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <h1 className="text-center">Himani ko pagal bna rakha h abhishek ne</h1>
+    <>
+    
+    <Router>
+    <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
+
+   
+    </>
   );
 }
 

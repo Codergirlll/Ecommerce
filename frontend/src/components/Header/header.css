@@ -1,0 +1,43 @@
+/* Header.css */
+
+.covid-banner {
+    font-size: 0.85rem;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 4px 0;
+  }
+  
+  .navbar-logo-text {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 1.25rem;
+  }
+  
+  .location-dropdown .dropdown-toggle {
+    border-radius: 4px;
+    font-size: 0.9rem;
+    padding: 4px 10px;
+  }
+  
+  .search-input input {
+    min-width: 300px;
+    border-radius: 4px;
+  }
+  
+  .nav-icons .nav-link {
+    color: #333;
+    margin: 0 5px;
+  }
+  
+  .nav-icons .cart-icon {
+    position: relative;
+  }
+  
+  .nav-icons .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+  }
