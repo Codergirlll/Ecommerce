@@ -1,0 +1,50 @@
+/* Button styling for 'India' */
+.location-dropdown {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  color: #222;
+}
+
+/* Dialog title styling */
+.location-dialog-title {
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 0;
+}
+
+/* Subtext below title */
+.location-subtext {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+}
+
+/* Wrapper for dialog content */
+.dialog-content {
+  padding: 16px;
+}
+
+/* Scrollable list of countries */
+.country-list {
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+/* Each country item */
+.country-item {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for country items */
+.country-item:hover {
+  background-color: #f5f5f5;
+}
