@@ -20,8 +20,10 @@ const CountryDropDown = () => {
     setOpen(true);
   };
 
-  const handleClose = (value) => {
-    setSelectedCountry(value);
+  const handleClose = (value = null) => {
+    if (value) {
+      setSelectedCountry(value);
+    }
     setOpen(false);
   };
 
@@ -36,7 +38,7 @@ const CountryDropDown = () => {
         {selectedCountry || "India"}
       </button>
 
-      <Dialog onClose={handleClose} open={open} fullWidth maxWidth="xs">
+      <Dialog onClose={() => handleClose()} open={open} fullWidth maxWidth="xs">
         <DialogTitle className="location-dialog-title">
           Choose your Delivery Location
           <div className="location-subtext">
